@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "LiteBee",
+    "description": "ScratchX for LiteBee",
+    "version": "1.0.8",
+    "offline_enabled": true,
+    "app":{
+        "background":{
+            "scripts":["background.js"]
+        }
+    },
+    "permissions": [
+        "serial",
+        "fileSystem",
+		"alarms",
+        "<all_urls>"
+    ],
+
+    "externally_connectable": {
+        "matches": ["*://scratchx.org/*"]
+    },
+
+    "icons": {
+        "256": "litebee.png"
+    }
+}
