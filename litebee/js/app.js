@@ -621,6 +621,6 @@ function motorSpeedSet(motor, value) {
 function sendSpeed()
 {
 	console.log("haha");
-	var msg = new Uint8Array([0x24,0x4d,0x3c,0x38,0x11,speed[0],speed[1],speed[2],speed[3],speed[4],speed[5],speed[6],speed[7]]);
+	var msg = new Uint8Array([0x24,0x4d,0x3c,0x38,0x07,speed[0],speed[1],speed[2],speed[3],speed[4],speed[5],speed[6],speed[7]]);
 	serial.sendbuf(msg.buffer);
 }

@@ -107,7 +107,8 @@
 	};
 	
 	var strData = new Object();
-	var port = chrome.runtime.connect('lohclnpicjahbccciannbegiamdbgeln',{name: "LiteBee"});
+	var port = chrome.runtime.connect('hemahponoooggniochchkkbldlgkdaga',{name: "LiteBee"});
+	//var port = chrome.runtime.connect('ojkmijfhdabdfcifimpafffjhjoknaki',{name: "LiteBee"});
 	//port.postMessage({joke: "Knock knock"});
 	port.onMessage.addListener(function(msg) {
 		if (msg.greeting == "hello")
@@ -153,7 +154,7 @@
     function sendMsg(msg){
         //console.log("send msg: "+msg);
         //chrome.runtime.sendMessage('ojkmijfhdabdfcifimpafffjhjoknaki', msg, processInput)
-		chrome.runtime.sendMessage('lohclnpicjahbccciannbegiamdbgeln', msg, processInput)
+		chrome.runtime.sendMessage('hemahponoooggniochchkkbldlgkdaga', msg, processInput)
     }
 
     // Block and block menu descriptions
